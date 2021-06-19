@@ -13,7 +13,7 @@ class _NewTransactionState extends State<NewTransaction> {
   final _titleController = TextEditingController();
 
   final _amountController = TextEditingController();
-  DateTime _selectedDate = DateTime.now();
+  DateTime _selectedDate;
 
   void _submitData() {
     if (_amountController.text.isEmpty) {
